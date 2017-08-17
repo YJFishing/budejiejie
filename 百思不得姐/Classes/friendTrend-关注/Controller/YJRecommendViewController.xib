@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YJRecommendViewController">
+            <connections>
+                <outlet property="categoryTableView" destination="tf0-SK-29E" id="rNO-is-iVG"/>
+                <outlet property="userTableView" destination="TUv-42-6Ik" id="x13-vj-Wdz"/>
+                <outlet property="view" destination="iN0-l3-epB" id="M2Q-3Q-4pi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TUv-42-6Ik" userLabel="右侧">
+                    <rect key="frame" x="70" y="0.0" width="344" height="736"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4Lm-NH-8yZ"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tf0-SK-29E">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="736"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="BYP-Uq-s1n"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bJK-Ze-MQl"/>
+                        <outlet property="delegate" destination="-1" id="6PA-3Q-2Nc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TUv-42-6Ik" secondAttribute="trailing" id="3wg-rv-deu"/>
+                <constraint firstAttribute="bottom" secondItem="tf0-SK-29E" secondAttribute="bottom" id="5SL-No-Oy1"/>
+                <constraint firstAttribute="bottom" secondItem="TUv-42-6Ik" secondAttribute="bottom" id="BYm-6f-Rme"/>
+                <constraint firstItem="tf0-SK-29E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KHO-Mo-fQs"/>
+                <constraint firstItem="TUv-42-6Ik" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PmN-kl-lah"/>
+                <constraint firstItem="tf0-SK-29E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dhT-EU-cFg"/>
+                <constraint firstAttribute="bottom" secondItem="tf0-SK-29E" secondAttribute="bottom" id="fc5-W7-zMe"/>
+                <constraint firstItem="tf0-SK-29E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="puR-Xr-h7s"/>
+                <constraint firstItem="tf0-SK-29E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="r6U-1D-jSV"/>
+                <constraint firstItem="TUv-42-6Ik" firstAttribute="leading" secondItem="tf0-SK-29E" secondAttribute="trailing" id="zwp-Zf-dkf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
